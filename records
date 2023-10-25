@@ -1,0 +1,13 @@
+
+01背包问：
+1、377 组合总数：
+def dfs(target):
+            if target<=0:
+                return target==0
+            res=0
+            for x in nums:
+                if x<=target:
+                    res+=dfs(target-x)
+            return res
+        return dfs(target)
+                       
